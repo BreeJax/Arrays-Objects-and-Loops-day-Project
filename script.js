@@ -93,12 +93,8 @@ function getLosses(){
 }
 
 
-
-
-
-
 /*
-7. Iterate over "letterVals" and "numberVals". Concatenate the values from the two arrays and store the new values in the "vals" array. Return "vals".
+7. Iterate over "letterVals" and "numberVals". link (things) together in a chain or series. the values from the two arrays and store the new values in the "vals" array. Return "vals".
 
 Your function should return [ "v5", "x67", "r34", "f456", "p78" ];
 */
@@ -107,9 +103,18 @@ let numberVals = [ 5, 67, 34, 456, 78 ];
 let letterVals = [ "v", "x", "r", "f", "p" ];
 
 function interleave(){
-    let vals = [];
+  let mix = []
+   for (let i = 0; i < 5; i++ ){
+     let random = letterVals[ i ] + numberVals[ i ]
+     mix.push(random)}
+     return mix
+
+
     // Your answer here:
 }
+
+
+
 
 
 
