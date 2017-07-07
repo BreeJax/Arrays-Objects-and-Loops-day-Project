@@ -1,45 +1,52 @@
-
-
-
 /********************
 Use the following array to complete tasks 1-3
 *********************/
 let numbers = [ 1, 12, 4, 18, 9, 7, 11, 3, 101, 5, 6 ];
 
 
+
 /*
 1. Return the 4th element in the "numbers" array */
-function getFourthNum(numnum){
+function getFourthNum (){
     // Your answer here:
-    return numnum[3]
+    return numbers[3]
 }
 
-console.log(getFourthNum(numbers))
+console.log(getFourthNum())
 
 /*
 2. Iterate over the "numbers" array. Push any numbers less than 10 onto "smallNums". Return "smallNums". */
 
-function smallNums(tinynums){
-    tinynums.filter(function(number){
-    return number < 10
-  })
+function smallNums(){
+  let tinynums = []
+  for (let i = 0; i < numbers.length; i++) {
+    let theCurrentNumber = numbers[i]
+    if (theCurrentNumber < 10) {
+      tinynums.push(theCurrentNumber)
+    }
+  }
+
+  return tinynums
 }
 
-console.log(smallNums(numbers))
+console.log(smallNums())
+
+
 
 
 
 /*
 3. Add 12, 99, and 101 (in that order) to the end of the "numbers" array. Return the "numbers" array.
 */
-function addNums(othernumbers){
-  numbers.push(12);
-  numbers.push(99);
+function addNums(){
+  numbers.push(12)
+  numbers.push(99)
   numbers.push(101)
     // Your answer here:
+    return numbers
 }
 
-console.log(addNums(othernumbers))
+console.log(addNums())
 
 
 
