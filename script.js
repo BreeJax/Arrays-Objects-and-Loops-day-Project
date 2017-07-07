@@ -129,6 +129,13 @@ let first = [ "blink", "stand", "glasses", "chair", "numinous", "adjacent", "bra
 let second = [ "think", "stand", "cheese", "break", "numinous", "mouse", "close", "toe" ];
 
 function union(){
-    let same = [];
+    let same = []
     // Your answer here:
+       for (let i = 0; i < 7; i++ ){
+         let same2 = first[ i ] === second[ i ]
+         if (same2 === true){
+         same.push(first[i])}
+       }
+         return same
 }
+console.log(union())
