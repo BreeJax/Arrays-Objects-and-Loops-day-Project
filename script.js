@@ -1,8 +1,4 @@
-/*
-In this project, your task is to complete the unfinished functions. Instructions accompany each function explaining what the function should do and what value it should return. You will implement logic using loops, conditional statements, arrays, and objects to return the values specified in the instructions.
 
-The `test.js` file contains tests for all of the functions in this project. Do not change any code in `test.js`. To see the output from `test.js` and to evaluate your work, open `index.html` in Chrome and view the console in the Developer Tools. You'll know that you are finding success when all of the `console.log` statements print 'true'.
-*/
 
 
 /********************
@@ -12,26 +8,38 @@ let numbers = [ 1, 12, 4, 18, 9, 7, 11, 3, 101, 5, 6 ];
 
 
 /*
-1. Return the 4th element in the "numbers" array
-*/
-function getFourthNum(){
+1. Return the 4th element in the "numbers" array */
+function getFourthNum(numnum){
     // Your answer here:
+    return numnum[3]
 }
 
+console.log(getFourthNum(numbers))
+
 /*
-2. Iterate over the "numbers" array. Push any numbers less than 10 onto "smallNums". Return "smallNums".
-*/
-function smallNums(){
-    let smallNums = [];
-    // Your answer here:
+2. Iterate over the "numbers" array. Push any numbers less than 10 onto "smallNums". Return "smallNums". */
+
+function smallNums(tinynums){
+    tinynums.filter(function(number){
+    return number < 10
+  })
 }
+
+console.log(smallNums(numbers))
+
+
 
 /*
 3. Add 12, 99, and 101 (in that order) to the end of the "numbers" array. Return the "numbers" array.
 */
-function addNums(){
+function addNums(othernumbers){
+  numbers.push(12);
+  numbers.push(99);
+  numbers.push(101)
     // Your answer here:
 }
+
+console.log(addNums(othernumbers))
 
 
 
